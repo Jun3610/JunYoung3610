@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuneYongPark's_portfolio</title>
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .sidebar {
+            position: fixed;  
+            top: 0;  
+            right: 0;  
+            width: 200px;  
+            height: 100%;  
+            background-color: #333;  
+            padding-top: 20px;  
+        }
+
+        .sidebar a {
+            display: block;  
+            color: white;  
+            padding: 10px 20px;  
+            text-decoration: none;  
+            font-size: 18px;  
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;  
+        }
+
+        #imageContainer0 {
+            position: absolute;
+            top: 110px;
+            left: 1200px;
+            border-radius: 15px; 
+            overflow: hidden; 
+            background-color: white;
+            padding: 10px; 
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        #imageContainer0 img {
+            border-radius: 10px; 
+        }
+
+        .name_job {
+                position: absolute;
+                top: 180px;
+                left: 160px;
+                font-size: 50px;
+         }
+
+        p {
+            font-size: 25px;
+        }
+
+        .introduce {
+            position: absolute;
+            top: 700px;
+            left: 100px;
+        }
+
+        .education {
+            position: absolute;
+            top: 1200px;
+            left: 120px;
+        }
+        .image-container {
+            position: relative;
+            width: 30%;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .image-container .balloon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;  
+            transition: opacity 0.3s ease;  
+            white-space: nowrap;  
+            text-overflow: ellipsis; 
+        }
+
+        .image-container:hover img {
+            filter: blur(5px);
+            opacity: 1;
+        }
+
+        .image-container:hover .balloon {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    
+</head>
+<body>
+
+
+    <nav class="sidebar">
+        <a href="#introduce">Introduce</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#certifications">Skills</a>
+        <a href="#certifications">Career</a>
+        <a href="#projects">Projects</a> 
+    </nav>
+
+    <div id="imageContainer0" style="position: absolute; top: 110px; left: 1100px;">
+        <img src="images/@2.jpg" width="250">
+        <div id="balloon5" class="balloon" style="top: 220px; left: 50px;"></div>
+    </div>
+
+    <div class="name_job" id="name_job">
+        <h1>Park June Young</h1>
+        <p>Backend Developer</p>
+        <hr>
+    </div>
+
+    <div class="contacts" id="contacts" style="position: absolute; top: 500px; left: 1100px; font-size: 20px; padding: 30px;">
+        <ul>
+            <h3>Contacts</h3>
+            <li>name: 박 준 영</li>
+            <li>phone: 010-6325-1145</li>
+            <li>email: pde4735@naver.com</li>
+        </ul>
+    </div>
+
+    <div class="introduce" id="introduce" style="position: absolute; top: 700px; left: 100px;">
+        <h1>Introduce Myself</h1>
+        <p>안녕하세요, 저는 백엔드 개발자 박준영입니다.<br><br>
+            개발을 시작하면서 코드가 단순한 명령어의 집합을 넘어 사람들의 삶에 영향을 미칠 수 있다는 걸 <br>깨달았습니다.<br><br>
+            매일 새로운 도전에 직면하며 배우고 성장하는 과정이 정말 흥미롭습니다.<br><br>
+            앞으로도 계속해서 나아가며, 기술을 통해 더 나은 세상을 만드는 개발자가 되고 싶습니다.</p>
+    </div>
+
+
+    <div class = education id="education">
+        <h1>Education</h1>
+        <p>부경대학교 시스템경영안전공학부 - 기술데이터공학 전공</p>
+        <p>학점:졸업 전</p>
+    </div> 
+    <div class="certifications" id="certifications" style="position: absolute; top: 1450px; left: 100px;">
+        <h1>License(예정)</h1>
+        <hr>
+        <p> - 정보처리기능사</p>
+        <p> - 정보처리산업기사</p>
+        <p> - 정보처리기사</p>
+        <p> - SQLD</p>
+        <p> - ADsP (Advanced Data Analytics Semi-Professional)</p>
+        <p> - ADP (Advanced Data Analytics Professional)</p>
+        <p> - IBM (Data Science Professional Certificate)</p>
+        <hr>
+    </div>
+
+    <div class="certifications2" id="certifications2" style="position: absolute; top: 1450px; left: 800px;">
+        <h1>Skill</h1>
+        <hr>
+        <h2> Frontend</h2>
+        <p> - html, JavaScript, css</p>
+        <h2>  Backend </h2>
+        <p> - Java(Spring Boot), node.js</p>
+        <h2> DB</h2>
+        <p> - python, R, SQL</p>
+        <hr>
+    </div>
+
+    <div class="certifications3" id="certifications3" style="position: absolute; top: 1450px; left: 1300px;">
+        <h1>career</h1>
+        <hr>
+        <p>-</p>
+        <hr>
+    </div>
+
+
+    <div style="position: absolute; top: 2050px; left: 0; right: 0;" id="projects">
+
+        <h1 style="position: relative; top: -50px; padding: 10px; cursor: pointer; text-align: center; left: -90px;">Project & Experience</h1>
+    
+        <div id="imageContainer7" class="image-container" style="position: absolute; top: 50px; left: 5%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/포폴.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">Portfolio - HTML, CSS, JavaScript</div>
+        </div>
+    
+        <div id="imageContainer1" class="image-container" style="position: absolute; top: 50px; left: 32%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/캡처2.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">Oneline Vectors and Matrices - Python</div>
+        </div>
+    
+        <div id="imageContainer2" class="image-container" style="position: absolute; top: 50px; left: 59%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/캡처3.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">Analyze data - Python</div>
+        </div>
+    
+        <div id="imageContainer3" class="image-container" style="position: absolute; top: 380px; left: 5%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/캡처4.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">Programmers</div>
+        </div>
+    
+        <div id="imageContainer4" class="image-container" style="position: absolute; top: 380px; left: 32%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/캡처5.jpg" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">Project: 독일 신용예측평가 데이터 분석</div>
+        </div>
+    
+        <div id="imageContainer5" class="image-container" style="position: absolute; top: 380px; left: 59%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/캡처5.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">Project: 가위바위보 게임 만들기</div>
+        </div>
+    
+        <div id="imageContainer6" class="image-container" style="position: absolute; top: 710px; left: 5%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/캡처1.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">BaseBall Game - Python</div>
+        </div>
+    
+        <div id="imageContainer6" class="image-container" style="position: absolute; top: 710px; left: 32%; width: 25%; height: 300px; border-radius: 15px; overflow: hidden;">
+            <img src="images/simpleBankingSystem_for_portfolio.png" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;">
+            <div class="balloon">simpleBankingSystem - Java</div>
+        </div>
+    </div>
+        
+    </body>
+</html>
